@@ -3,9 +3,9 @@ import { UserController } from "../controllers/UserController";
 
 const router = Router();
 
-router.post("/", UserController.create);
 router.get("/", UserController.getAll);
 router.get("/:id", UserController.getOne);
+router.post("/", UserController.create);
 router.put("/:id", UserController.update);
 router.delete("/:id", UserController.delete);
 
